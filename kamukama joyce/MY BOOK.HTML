@@ -1,0 +1,145 @@
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="skyblue">
+	</body>
+    <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./home.html">HOME</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./about.html">ABOUT</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./contact.html">CONTACT</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./services.html">SERVICES</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./form.html">FORM</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./table.html">TABLE</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./book.html">MY BOOK</a></li>
+    </ul></center>
+
+	</p>
+	<h1>The Payment Billing Product management system</h1
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database Name: <b>the Payment Billing Product management system</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol type="a"><li><b>the Customer TABLE </b></li>
+
+			<p>The Customer table in Payment Billing Product management system the  plays a crucial role in managing customer relationships, facilitating sales and marketing efforts, and providing personalized service to customers. It serves as a central repository of customer information, enabling the company to effectively interact with and serve its clientele. .  
+</p></br>
+
+			<li><b>Invoices TABLE</b></li>
+
+			<p> : An invoice table typically contains information about products or services that have been provided to a customer, along with details such as quantities, prices, and any applicable taxes or discounts. </b></li>
+			<li><b>is Farmer</b></li>
+
+			<p> : the "Farmer" table is a database table that stores information about the farmers who supply cattle to the hub. 
+</p></br>
+
+			<li><b>Product TABLE</b></li>
+
+			<p>: : In Payment Billing Product management system, the Product table is a critical component for storing and managing information about the goods or services offered.<br> It serves as the central repository for product details that are essential for various functions within the company.
+ </p></br><li><b>Subscription TABLE</b></li>
+
+      <p>A subscription table for product billing payments typically outlines the different subscription plans available for a product or service, along with their corresponding billing details.
+ </p></br>
+
+			<li><b>Admin Table</b></li></ol>
+
+			<p> Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.
+ </p></li></br>
+
+			              <h3><u><i><li>Attributes and their relationships</li></i></u></h3>
+			              <ol type="Attributes and their relationships">
+			       <b>SQL QUERIES</b></br></br>
+			       
+    <ol type="i"><li>Animals_Available</li><br>
+
+      CREATE TABLE Animals_Available (<br>
+    animal_id INT PRIMARY KEY AUTO_INCREMENT,<br>
+    animal_name VARCHAR(100) NOT NULL,<br.
+    quantity_available INT<br>
+);<br>
+
+
+
+
+    <li>Cattle </li><br>
+      CREATE TABLE Cattle (<br>
+    CattleID INT PRIMARY KEY AUTO_INCREMENT,<br>
+    FarmerID INT,<br>
+    Breed VARCHAR(100),<br>
+    Age INT<br>
+);<br>
+
+
+<br> 
+			       
+    <li>Customer table</li><br>
+
+      CREATE TABLE Customer (<br>
+    CustomerID INT PRIMARY KEY AUTO_INCREMENT,<br>
+    Name VARCHAR(100) NOT NULL,<br>
+    Contact VARCHAR(20),<br>
+    Address VARCHAR(255)<br>
+);<br>
+
+ <li>Invoices</li><br>
+
+➢   CREATE TABLE Invoices ( 
+    invoice_id INT PRIMARY KEY,
+         customer_id INT,     payment_method_id INT,     issue_date DATE,     total_amount DECIMAL(10, 2),     currency VARCHAR(3),     payment_status VARCHAR(20) 
+); 
+
+ <li>Subscription</li><br>
+   ➢   CREATE TABLE Subscription (<br> 
+    subscription_id INT PRIMARY KEY,<br> 
+        product_id INT, <br>    
+        start_date DATE, <br>   
+         end_date DATE,<br>  
+            status VARCHAR(20)<br> 
+);<br> 
+
+
+<P><b>Reference:  
+1. Six-Step Relational Database Design Second Edition (Fidel A Captain, 2016)  2. www.erbessd-instruments.com </b>  </P>
+
+	</body>
+
+        </ul>
+		<h2><u><li>JAVA</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3><br>
+			<p> In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.  Tools used to develop this system in java programming:<br><br>
+			 <h4><u><li>Tools used to develop this system in java programming</li></u></h4>
+		
+Eclipse IDE: an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular.  
+JAR stands for Java Archive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components.  
+</p></br>
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+        </ul>
+        <P><i>CUSTOMER FORM</i></p>
+        <img src="IMAGE/CUSTOMER FORM.jpg" width=600 height=200><br>
+        <P><i>INVOICE FORM</i></p>
+        <img src="IMAGE/INVOICE FORM.jpg" width=600 height=200><br>
+        <P><i>PAYMENT FORM</i></p>
+        <img src="IMAGE/PAYMENT FORM.jpg" width=600 height=200><br>
+        <P><i>SINUP FORM</i></p>
+        <img src="IMAGE/SINUP FORM.jpg" width=600 height=200><br>
+        <P><i>LOGIN FORM</i></p>
+        <img src="IMAGE/LOGIN FORM.jpg" width=600 height=200><br>
+        <P><i>MENU FORM</i></p>
+        <img src="IMAGE/MENU FORM.jpg" width=600 height=200><br>
+        <P><b>References<br> 
+1.https://www.javatpoint.com/operators-in-java<br>
+2.	www.eclipse.org>windowbuilider<br>   
+3.	www.vogella.com>article<br>   
+4.	www.formdev.com>ides>eclipse   
+</b>  </P>
+</ol>
+	<marquee><p><i><h2 style="color: white;">Prepared By:</i></p>KAMUKAMA JOYCE</h2></marquee>
+	</body>
+	</html>
